@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 16px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0 0 16px 0;
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .settings {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .setting-item {
+      margin-bottom: 12px;
+    }
+
+    .setting-item:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 13px;
+      background: white;
+      color: #333;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: white;
+      color: #667eea;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .status {
+      margin-top: 12px;
+      padding: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      font-size: 12px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .tips {
+      margin-top: 12px;
+      padding: 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      font-size: 11px;
+      line-height: 1.5;
+      backdrop-filter: blur(10px);
+    }
+
+    .tips strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>📖 漫画翻译工具</h2>
+
+  <div class="settings">
+    <div class="setting-item">
+      <label for="apiUrl">翻译 API 地址：</label>
+      <input type="text" id="apiUrl" placeholder="https://your-project.vercel.app/api/ocr_translate">
+    </div>
+  </div>
+
+  <button id="saveBtn">💾 保存设置</button>
+  <button id="translateBtn" style="margin-top: 8px;">🔍 开始翻译当前页面</button>
+
+  <div class="status" id="status"></div>
+
+  <div class="tips">
+    <strong>使用说明：</strong>
+    1. 设置好 API 地址并保存<br>
+    2. 打开漫画网页<br>
+    3. 点击"开始翻译"按钮<br>
+    4. 随着页面滑动自动翻译
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+图标说明：
+
+由于这是一个文本环境，无法直接创建图片文件。
+您需要自己创建一个 PNG 图标文件，命名为 icon.png，放在 extension 目录下。
+
+推荐的图标设计：
+- 尺寸：128x128 像素（Chrome 会自动缩放到其他尺寸）
+- 内容：可以包含书本📖或日文字符的图标
+- 配色：与扩展主题一致（紫色渐变）
+
+在线图标生成工具：
+1. https://www.favicon-generator.org/
+2. https://realfavicongenerator.net/
+3. https://www.canva.com/
+
+或者使用 emoji 转图标：
+https://favicon.io/emoji-favicons/open-book/
