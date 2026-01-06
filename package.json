@@ -1,0 +1,21 @@
+{
+  "name": "ocr-translate-api",
+  "version": "1.0.0",
+  "description": "OCR Translate API for Vercel Serverless Functions",
+  "scripts": {
+  "dev": "vercel dev",
+  "build": "echo \"skip build\"",
+  "type-check": "tsc --noEmit"
+},
+  "keywords": ["vercel", "serverless", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "vercel": "^34.0.0"
+  }
+}
